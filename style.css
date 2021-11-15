@@ -1,0 +1,431 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.7rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+
+h2{
+  font-size:1.9rem ;
+  color:#191919 ;
+  font-weight: 500;
+}
+p{
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #787878;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ===================================== nav-section ============================================ */
+
+nav{
+  background: #fff;
+}
+
+.basar-menu .nav-item .nav-link{
+  color: #191919;
+  font-size: 12px;
+  padding: 5px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: .5s;
+}
+.basar-menu .nav-item .nav-link:hover{
+  color: #10c9c3;
+}
+.basar-menu .first-link{
+  color: #10c9c3 !important;
+}
+
+/* ===================================== slider-section ============================================= */
+
+.slider-section{
+  background: url(img/slider_back.jpg) no-repeat center center;
+  padding: 200px 0;
+  background-size: cover;
+  height: auto;
+ }
+
+
+.slider-text{
+  width: 50%;
+  float: left;
+  margin-top: -100px;
+  margin-bottom: 160px;
+}
+.slider-text h1{
+  font-size: 2.6rem;
+  color: #1d1d1d;
+  font-weight: 600;
+}
+.slider-text p{
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 40px;
+}
+.slider-text .btn-primary{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #10c9c3;
+  padding: 15px 40px;
+  margin-top: 100px !important;
+  transition: .6s;
+}
+.slider-text .btn-primary:hover{
+  color: #fff;
+  background-color: #111;
+}
+
+
+/*  ===================================== about-section ============================================= */
+
+.about-section{
+  padding: 80px 0;
+}
+.about-text{
+  text-align: center;
+}
+
+/*  ===================================== skill-section ============================================= */
+
+.skill-section{
+  background: url(img/skill_back.jpg) no-repeat center center;
+  padding: 100px 0;
+}
+
+.skill-text h2{
+  margin-left: 28px;
+}
+
+.my-skill span{
+  margin-left: 50px;
+}
+
+.my-skill{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+}
+.my-skill li{
+  list-style-type: none;
+  margin: 60px 0;
+  position: relative;
+}
+.my-skill li::before{
+  position: absolute;
+  content: "";
+  top: calc(100% + 10px);
+  left: 0;
+  background-color:#fff;
+  width: 100%;
+  height: 10px;
+  border-radius: 30px;
+}
+.my-skill li::after{
+  position: absolute;
+  content: "";
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 10px;
+  border-radius: 30px;
+
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.my-skill li.ui::after{
+  animation-name: ui;
+}
+
+@keyframes ui{
+  to{
+    width: 75%;
+    background-color: #10c9c3;
+  }
+}
+
+.my-skill li.web::after{
+  animation-name: web;
+}
+
+@keyframes web{
+  to{
+    width: 90%;
+    background-color: #10c9c3;
+  }
+}
+
+.my-skill li.marketing::after{
+  animation-name: marketing;
+}
+
+@keyframes marketing{
+  to{
+    width: 65%;
+    background-color: #10c9c3;
+  }
+}
+
+/*  ===================================== project-section ============================================= */
+
+
+.project-section{
+  background-color: #39b4af;
+}
+
+.project-logo span{
+  font-size: 50px;
+  color: #fff;
+  margin-right: 30px;
+  transition: .6s;
+}
+
+.project-logo span:hover{
+  color: #ff0000;
+}
+.project-item h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.project-item h5{
+  font-size:12px ;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*  ===================================== img-section ============================================= */
+
+
+.img-section {
+  background-color: #DFE3E5 !important;
+}
+
+
+
+.portolio-item a{
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+}
+.portolio-item a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(56, 56, 56, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.portolio-item:hover a::after{
+  background: rgba(56, 56, 56, 0.6);
+  opacity: 1;
+  visibility: visible;
+  transition: .5s;
+}
+
+.img-section .img-text h5{
+  text-transform: uppercase;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+
+/*  ===================================== work-section ============================================= */
+
+.video-img{
+  position: relative;
+  z-index: -1;
+}
+
+
+.play-btn img{
+  width: 100px;
+  height: 100px;
+  margin-top: -58%;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+/*  ===================================== icon-section ============================================= */
+
+.icon-section{
+  background-color: #f5f5f5;
+}
+
+
+.main-icon-sec .icon-item{}
+.main-icon-sec .icon-item span{
+  font-size: 2.7rem;
+  color: #6b6969;  
+}
+.main-icon-sec .icon-item h5{
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+  text-transform: uppercase;
+}
+
+/* ================================== slide-content ========================================  */
+
+.slide-content{
+  background-color: #10c9c3;
+  padding: 150px 0;
+}
+
+.slide-text h6{
+  font-size: 22px;
+  color: #fff;
+  line-height: 2.5rem;
+  margin-bottom: 50px;
+}
+.slide-text h5{
+  font-size: 16px;
+  color: #ddd;
+  text-transform: uppercase;
+
+}
+
+/* ================================== owl-carousel-section ======================================== */
+.img-thumb img {
+  padding: 5px;
+  display: inline-block;
+  width: inherit !important;
+  margin: auto;
+}
+
+/* =============================== need-project-section ======================================== */
+
+.need-project-section{
+  background-color: #f2eaea;
+}
+
+.form-section input{
+  padding: 15px 20px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #787878;
+  margin-bottom: 30px;
+}
+.form-section textarea{
+  padding: 15px 20px;
+  margin-bottom: -55px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #787878;
+  min-height: 200px;
+}
+
+
+.btn2 .btn-primary{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #10c9c3;
+  padding: 15px 40px;
+  margin-top: 100px !important;
+  transition: .6s;
+}
+.btn2 .btn-primary:hover{
+  color: #fff;
+  background-color: #111;
+}
+
+
+/* =============================== footer-section ======================================== */
+
+.footer-section{
+  background-color: #141414;
+  color: rgb(243, 236, 236);
+}
+
+
+.footer-left{}
+.footer-left h5{
+  font-size:18px ;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .6s;
+}
+.footer-left h6{
+  font-size:15px !important;
+  cursor: pointer;
+  transition: .6s;
+}
+.footer-left h6:hover{
+  color: #10c9c3;
+}
+.footer-left h6 span{
+  font-size:15px !important;
+  cursor: pointer;
+  transition: .6s;
+}
+.footer-left h6 span:hover{
+  color: #ff0000;
+}
+
+
+.footer-mid{
+  margin-left:30px;
+}
+.footer-mid h5{
+  font-size:16px !important;
+  cursor: pointer;
+  transition: .6s;
+}
+.footer-mid h5:hover{
+  color: #10c9c3;
+}
+
+
+.footer-right {
+  margin-left: 30px;
+}
+.footer-right ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-right ul li{}
+.footer-right ul li a{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  transition: .6s;
+}
+.footer-right ul li a:hover{
+  color: #10c9c3;
+  letter-spacing: 1.5px;
+}
+
+
+.footer-right ul li a span i{
+  margin-right: 15px;
+}
+

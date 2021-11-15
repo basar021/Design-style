@@ -1,0 +1,74 @@
+
+@media (max-width:992px) {
+
+  .slider-text{
+    width: 75%;
+  }
+  
+
+}
+
+@media (max-width:768px) {
+
+
+  .play-btn img{
+    width: 60px;
+    height: 60px;
+    margin-top: -62%;
+    margin-left: 38%;
+  }
+
+  .slider-text{
+    width: 100%;
+  }
+
+
+}
+@media (max-width:560px) {
+
+
+  .project-section .project-logo{
+    margin-left: 100px;
+  }
+
+
+  .slider-text h1{
+    font-size: 2rem;
+  }
+  .slider-text p{
+    font-size: 16px;
+  }
+  .slider-text .btn-primary{
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+
+ 
+
+
+}
+@media (max-width:400px) {
+
+
+  .project-section .project-logo{
+    margin-left: 50px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
